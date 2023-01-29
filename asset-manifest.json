@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ayush-verma/static/css/main.8b8bf77e.css",
+    "main.js": "/ayush-verma/static/js/main.d7ce844d.js",
+    "static/js/787.c9b56293.chunk.js": "/ayush-verma/static/js/787.c9b56293.chunk.js",
+    "static/media/ayush.png": "/ayush-verma/static/media/ayush.15b07ebe4ee5e4ab0621.png",
+    "static/media/contact.png": "/ayush-verma/static/media/contact.e680861d11d71e38e77e.png",
+    "static/media/AyushVermaResume.pdf": "/ayush-verma/static/media/AyushVermaResume.54a77121e0919086c656.pdf",
+    "static/media/infinity-blogs.png": "/ayush-verma/static/media/infinity-blogs.2c15dfd49e3e20802fab.png",
+    "static/media/coder.png": "/ayush-verma/static/media/coder.fce3f244cfc0da915d47.png",
+    "static/media/baatein.png": "/ayush-verma/static/media/baatein.a5940a0b09509dea681e.png",
+    "static/media/connect-bees.png": "/ayush-verma/static/media/connect-bees.dc77278045b398c97468.png",
+    "static/media/lab-partner.png": "/ayush-verma/static/media/lab-partner.b77e7d2a2cf24c55544e.png",
+    "static/media/namaste.png": "/ayush-verma/static/media/namaste.6b70cfa4d51f94915f29.png",
+    "static/media/html-logo.png": "/ayush-verma/static/media/html-logo.b8b37812b41628f34c6e.png",
+    "static/media/react-logo.png": "/ayush-verma/static/media/react-logo.ed78a572ed82617b2da7.png",
+    "static/media/python-logo.png": "/ayush-verma/static/media/python-logo.5f2cc86a51f71a3a4fb7.png",
+    "static/media/css-logo.png": "/ayush-verma/static/media/css-logo.322a9d010ac46d9a3b85.png",
+    "static/media/js-logo.png": "/ayush-verma/static/media/js-logo.cda683513d6d98d4fe35.png",
+    "index.html": "/ayush-verma/index.html",
+    "main.8b8bf77e.css.map": "/ayush-verma/static/css/main.8b8bf77e.css.map",
+    "main.d7ce844d.js.map": "/ayush-verma/static/js/main.d7ce844d.js.map",
+    "787.c9b56293.chunk.js.map": "/ayush-verma/static/js/787.c9b56293.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b8bf77e.css",
+    "static/js/main.d7ce844d.js"
+  ]
+}

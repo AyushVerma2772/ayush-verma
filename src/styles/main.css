@@ -1,0 +1,68 @@
+/* Font links */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Caveat&family=Lobster&family=Mulish&family=Ubuntu&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #101321;
+    --heading-color: #42ded6;
+    --text-color: #f3feff;
+    --cursive-font: 'Caveat', cursive;
+
+}
+
+::-webkit-scrollbar {
+    width: 0.9rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(80, 80, 80);
+    box-shadow: inset 0 0 0.3rem rgb(50, 50, 50);
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #010e1a;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+.tag::after,
+.tag::before {
+    position: absolute;
+    color: #878f8f;
+    font-size: 2.35rem;
+    font-family: var(--cursive-font);
+}
+
+@media only screen and (max-width: 620px) {
+    .tag::after, .tag::before {
+        left: 5%;
+    }
+}

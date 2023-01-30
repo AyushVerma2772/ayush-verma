@@ -12,7 +12,7 @@
 /* For Mobile medium and large screen */
 @media screen and (min-width: 390px) and (max-width: 620px) {
     html {
-        font-size: 5.8px;
+        font-size: 6.8px;
     }
 }
 
@@ -20,7 +20,7 @@
 /* For tablet and landscape mobiles */
 @media screen and (min-width: 620px) and (max-width:900px) {
     html {
-        font-size: 7px;
+        font-size: 7.5px;
     }
 
 }
@@ -28,7 +28,7 @@
 /* For small laptop screens */
 @media screen and (min-width: 901px) and (max-width:1024px) {
     html {
-        font-size: 8.4px;
+        font-size: 8.7px;
     }
 
 }
@@ -36,7 +36,7 @@
 /* For medium laptop screens */
 @media screen and (min-width: 1025px) and (max-width:1279px) {
     html {
-        font-size: 8.7px;
+        font-size: 9px;
     }
 
 }
@@ -48,12 +48,3 @@
     }
 
 }
-
-/* &::-webkit-scrollbar {
-        width: 0.3rem;
-    }
-  
-    &::-webkit-scrollbar-thumb {
-        border-radius: 0.5rem;
-        background-color: ${purple};
-    } */

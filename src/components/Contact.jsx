@@ -6,7 +6,9 @@ import contactImg from '../images/contact.png';
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp, BsInstagram, BsFacebook } from "react-icons/bs";
-import { mobile1 } from '../styles/Responsive'
+import { mobile1 } from '../styles/Responsive';
+import { addDoc, collection } from 'firebase/firestore';
+import { db } from '../firebase-config';
 
 
 const Wrapper = styled.section`
@@ -40,6 +42,7 @@ const ImageBox = styled.div`
 
 const Image = styled.img`
     width: 38rem;
+    filter: drop-shadow(0.3rem 0.5rem 0.2rem #00aaaa6c);
 `;
 
 const ContactForm = styled.form`
@@ -108,13 +111,16 @@ const SendButton = styled.button`
 const Contact = () => {
 
     const sendBtn = useRef();
-
+    const colRef = collection(db, "contact")
 
     const handleSubmit = (e) => {
+
         e.preventDefault();
         const name = e.target[0].value;
         const email = e.target[1].value;
         const message = e.target[2].value;
+        const date = new Date();
+        const time = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} at ${date.getHours()}:${date.getMinutes()}`;
 
         if (name && email && message) {
             // Animation 
@@ -125,14 +131,26 @@ const Contact = () => {
                 sendBtn.current.firstChild.innerText = "Send";
                 sendBtn.current.lastChild.style = "left: -24%;";
 
-                console.log(name, email, message)
+
+                const addData = async () => {
+                    try {
+                        await addDoc(colRef, {
+                            name, email, message, time
+                        });
+                        
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+
+                addData();
 
                 e.target[0].value = "";
                 e.target[1].value = "";
                 e.target[2].value = "";
 
                 alert("Thank you for reaching out!\nI'll get back to you shortly.")
-            }, 800);
+            }, 600);
 
 
         }

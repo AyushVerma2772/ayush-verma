@@ -12,6 +12,7 @@ import Contact from './components/Contact';
 import ScrollArrow from './components/ScrollArrow';
 import NameLoading from './components/NameLoading';
 import { useState } from 'react';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -47,6 +48,7 @@ const App = () => {
               <Projects />
               <Contact />
             </main>
+            <Footer />
             <ScrollArrow />
           </>
       }

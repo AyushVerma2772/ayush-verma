@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { headingColor } from '../styles/CommonComp';
+import { mobile1 } from '../styles/Responsive';
 
 
 
@@ -16,13 +17,25 @@ const ArrowBtn = styled.button`
     right: 2.5rem;
     cursor: pointer;
     box-shadow: inset 0 0 0.65rem rgba(0,170,170,0.5), 0 0 0.65rem rgba(0,170,170,0.5);
+    animation: show 1.5s ease-in;
+    ${mobile1({width: '4.5rem', height: '4.5rem'})}
 
     #scroll-arrow-icon {
         color: ${headingColor};
         font-size: 2.5rem;
         text-shadow: inset 0 0 0.65rem rgba(0,170,170,0.5), 0 0 0.65rem rgba(0,170,170,0.5);
-        
         transition: transform 0.5s ease-in-out;
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+        
     }
 `;
 

@@ -20,7 +20,7 @@
 /* For tablet and landscape mobiles */
 @media screen and (min-width: 620px) and (max-width:900px) {
     html {
-        font-size: 7.5px;
+        font-size: 7.6px;
     }
 
 }

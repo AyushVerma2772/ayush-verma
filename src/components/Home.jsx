@@ -4,7 +4,7 @@ import coder from '../images/coder.png'
 import { Button, headingColor, paraFont, textColor } from '../styles/CommonComp';
 import namaste from '../images/namaste.png';
 import { mobile1 } from '../styles/Responsive';
-import ayushVermaResume from '../resume/AyushVermaResume.pdf';
+import ayushVermaResume from '../resume/Ayush Verma Resume.pdf';
 
 
 const Wrapper = styled.section`
@@ -97,7 +97,7 @@ const Home = () => {
 
                     <br />
                     <Bio>A Fronted developer & <br /> Subject Matter Expert</Bio>
-                    <ResumeBtn as={'a'} href={ayushVermaResume} download className='link' >Resume</ResumeBtn>
+                    <ResumeBtn as={'a'} href={ayushVermaResume} target="_blank" className='link' >Resume</ResumeBtn>
                 </Left>
 
                 <Right data-aos="zoom-in" >

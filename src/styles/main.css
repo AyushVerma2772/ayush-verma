@@ -13,7 +13,6 @@
     --heading-color: #42ded6;
     --text-color: #f3feff;
     --cursive-font: 'Caveat', cursive;
-
 }
 
 ::-webkit-scrollbar {
@@ -55,7 +54,10 @@ body {
 #main {
     max-width: 1500px;
     margin: 0 auto;
+}
 
+.b2b {
+    border: 2px solid blue;
 }
 
 .tag::after,

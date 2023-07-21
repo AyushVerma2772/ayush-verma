@@ -4,9 +4,10 @@ import ProjectCard from './ProjectCard';
 import { Heading2, mainBgColor } from '../styles/CommonComp';
 import { mobile1 } from '../styles/Responsive';
 import infinityBlogs from '../images/infinity-blogs.png';
-import connectBees from '../images/connect-bees.png';
+// import connectBees from '../images/connect-bees.png';
 import labPartner from '../images/lab-partner.png';
 import baatein from '../images/baatein.png';
+import fireVdos from "../images/fireVdos.png"
 
 
 const Wrapper = styled.section`
@@ -36,14 +37,13 @@ const Container = styled.div`
     ${mobile1({ gridTemplateColumns: 'repeat(1, 1fr)', columnGap: '0' })}
 `;
 
-
 const Projects = () => {
 
     const projects = [
-        { id: 1, name: 'infinity Blogs', image: infinityBlogs, gitRepo: 'https://github.com/AyushVerma2772/InfinityBlogs', link: 'https://infinity-blogs.firebaseapp.com/', details: 'React | Firebase | Context API' },
-        { id: 2, name: 'Baatein', image: baatein, gitRepo: 'https://github.com/AyushVerma2772/Baatein', link: 'https://baatein-chats.web.app/', details: 'React | Firebase | Context API' },
-        { id: 3, name: 'Lab Partner', image: labPartner, gitRepo: '/', link: 'https://lab-partner.web.app/', details: 'React | Firebase' },
-        { id: 4, name: 'Connect Bees', image: connectBees, gitRepo: 'https://github.com/AyushVerma2772/ConnectBees', link: 'https://ayushverma2772.github.io/ConnectBees/', details: 'React' },
+        { id: 1, name: 'Fire Vdos', image: fireVdos, gitHubRepo: 'https://github.com/AyushVerma2772/FireVdos', link: 'https://fire-vdos.web.app/', details: 'React | Firebase | Context API | Rapid API' },
+        { id: 2, name: 'Infinity Blogs', image: infinityBlogs, gitHubRepo: 'https://github.com/AyushVerma2772/InfinityBlogs', link: 'https://infinity-blogs.firebaseapp.com/', details: 'React | Firebase | Context API' },
+        { id: 3, name: 'Baatein', image: baatein, gitHubRepo: 'https://github.com/AyushVerma2772/Baatein', link: 'https://baatein-chats.web.app/', details: 'React | Firebase | Context API' },
+        { id: 4, name: 'Lab Partner', image: labPartner, gitHubRepo: '/', link: 'https://lab-partner.web.app/', details: 'React | Firebase' },
     ]
 
     return (
@@ -54,11 +54,13 @@ const Projects = () => {
                 <Container>
                     {
                         projects.map(ele => (
-                            <ProjectCard key={ele.id} image={ele.image} gitRepo={ele.gitRepo} link={ele.link} name={ele.name} details={ele.details} />
+                            <ProjectCard key={ele.id} image={ele.image} gitHubRepo={ele.gitHubRepo} link={ele.link} name={ele.name} details={ele.details} />
                         )
                         )
                     }
                 </Container>
+
+                <Heading2><span>My Projects</span></Heading2>                
             </Wrapper>
         </>
     )

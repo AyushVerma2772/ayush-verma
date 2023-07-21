@@ -5,7 +5,7 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import profileImage from '../images/ayush.png';
 import { mobile1 } from '../styles/Responsive';
-import ayushVermaResume from '../resume/AyushVermaResume.pdf';
+import ayushVermaResume from '../resume/Ayush Verma Resume.pdf';
 
 
 const Wrapper = styled.section`
@@ -107,7 +107,7 @@ const About = () => {
 
     return (
         <>
-            <Wrapper id='about' ref={about} className='tag' >
+            <Wrapper id='about' ref={about} className='tag'>
                 <Wave ref={topWave} xmlns="http://www.w3.org/2000/Wave" viewBox="0 0 1440 320"><path fill="#172132" fillOpacity="1" d="M0,320L0,96L120,96L120,224L240,224L240,0L360,0L360,96L480,96L480,192L600,192L600,128L720,128L720,96L840,96L840,160L960,160L960,96L1080,96L1080,256L1200,256L1200,224L1320,224L1320,128L1440,128L1440,320L1320,320L1320,320L1200,320L1200,320L1080,320L1080,320L960,320L960,320L840,320L840,320L720,320L720,320L600,320L600,320L480,320L480,320L360,320L360,320L240,320L240,320L120,320L120,320L0,320L0,320Z"></path></Wave>
 
                 <Wave ref={bottomWave} xmlns="http://www.w3.org/2000/Wave" viewBox="0 0 1440 320"><path fill="#172132" fillOpacity="1" d="M0,96L0,128L130.9,128L130.9,96L261.8,96L261.8,160L392.7,160L392.7,256L523.6,256L523.6,224L654.5,224L654.5,64L785.5,64L785.5,224L916.4,224L916.4,64L1047.3,64L1047.3,288L1178.2,288L1178.2,192L1309.1,192L1309.1,288L1440,288L1440,0L1309.1,0L1309.1,0L1178.2,0L1178.2,0L1047.3,0L1047.3,0L916.4,0L916.4,0L785.5,0L785.5,0L654.5,0L654.5,0L523.6,0L523.6,0L392.7,0L392.7,0L261.8,0L261.8,0L130.9,0L130.9,0L0,0L0,0Z"></path></Wave>
@@ -143,7 +143,7 @@ const About = () => {
                         </Para>
 
 
-                        <Button as={'a'} href={ayushVermaResume} download className='link'>Resume</Button>
+                        <Button as={'a'} href={ayushVermaResume} target="_blank" className='link'>Resume</Button>
 
 
                     </RightBox>

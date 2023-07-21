@@ -87,24 +87,56 @@ const Details = styled.div`
 
 `;
 
+const ProjectName = styled.a`
+    font-family: ${navFont};
+    color: ${headingColor};
+    text-align: center !important;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    position: relative;
+    width: max-content;
+    padding: 0.1rem 0.2rem;
+
+    &::before {
+        width: 0;
+        height: 0.2rem;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0.5rem;
+        background-color: ${headingColor};
+        transition: width 0.3s linear;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+`;
+
+
 const ProjectCard = (props) => {
     return (
         <>
-            <Card data-aos="flip-left" data-aos-offset="300">
-                <Image src={props.image} alt="" />
+            <div>
+                <Card data-aos="flip-left" data-aos-offset="100">
+                    <Image src={props.image} alt="" />
 
-                <InnerContainer className='inner-container' >
-                    <IconBox className='d-flex' >
-                        <a href={props.gitRepo} target="_blank" className='d-flex link' rel="noreferrer" ><VscGithub className='git-icon' /></a>
-                        <a href={props.link} rel="noreferrer" target="_blank" className='d-flex link' > <FiLink className='icon' /> </a>
-                    </IconBox>
+                    <InnerContainer className='inner-container' >
+                        <IconBox className='d-flex' >
+                            <a href={props.gitRepo} target="_blank" className='d-flex link' rel="noreferrer" ><VscGithub className='git-icon' /></a>
+                            <a href={props.link} rel="noreferrer" target="_blank" className='d-flex link' > <FiLink className='icon' /> </a>
+                        </IconBox>
 
-                    <Details className='d-flex' >
-                        <h3>{props.name}</h3>
-                        <h4>{props.details}</h4>
-                    </Details>
-                </InnerContainer>
-            </Card>
+                        <Details className='d-flex' >
+                            <h3>{props.name}</h3>
+                            <h4>{props.details}</h4>
+                        </Details>
+                    </InnerContainer>
+                </Card>
+
+                <ProjectName href={props.link} rel="noreferrer" target="_blank" className='d-flex link' > {props.name} </ProjectName>
+            </div>
         </>
     )
 }
